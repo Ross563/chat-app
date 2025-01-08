@@ -12,6 +12,7 @@ const io = new Server(server, {
     origin: process.env.frontend_base_url || "http://localhost:3000",
     methods: ["GET", "POST"],
     credentials: true,
+    allowedHeaders: ["Access-Control-Allow-Origin"],
   },
 });
 
